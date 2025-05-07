@@ -243,7 +243,7 @@ export default function Register() {
     } else if (password.length < 8) {
       notifyError("Password must be at least 8 characters long.");
     } else {
-      Axios.post("https://playvergrserver2-1.onrender.com/user/register/", {
+      Axios.post("https://playvergrserver2-1.onrender.com/api/user/register/", {
         firstName,
         lastName,
         email,
